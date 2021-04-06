@@ -1,0 +1,12 @@
+version: '3'
+
+volumes:
+  lab-volumne:
+
+services:
+  jupyterlab:
+    image: chriscarini/jupyterlab
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./workbooks:/home/jovyan/workbooks
