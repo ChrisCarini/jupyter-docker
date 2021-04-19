@@ -43,5 +43,8 @@ RUN pip install --user -r /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 
+# Set the user to be $NB_USER so the notebook directory is correct.
+USER $NB_USER
+
 # Overwrite the notebook directory...
 CMD [ "start-notebook.sh", "--notebook-dir=~/workbooks" ]

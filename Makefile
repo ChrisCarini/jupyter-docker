@@ -4,7 +4,13 @@ service_name = jupyterlab
 
 # start the container, building if necessary
 run lab: build
-	@printf "UID=$(id -u)\nGID=$(id -g)\n" > .env
+	@rm -rf .env
+	@printf "NB_USER=$$(echo $$USER)\n" >> .env
+	@printf "NB_UID=$$(id -u)\n" >> .env
+	@printf "NB_GID=$$(id -g)\n" >> .env
+	@printf "UID=$$(id -u)\n" >> .env
+	@printf "GID=$$(id -g)\n" >> .env
+	@printf "USER=$$(echo $$USER)\n" >> .env
 
 	@echo "Running lab..."
 	docker-compose -p $(project_name) up -d
@@ -16,7 +22,7 @@ run lab: build
 	@make access
 
 access:
-	@docker-compose -p $(project_name) logs $(service_name) | grep -A100 'To access the server,'
+	@docker-compose -p $(project_name) exec $(service_name) bash -c "sudo -u $$USER /opt/conda/bin/jupyter server list" | sed "s/0.0.0.0/$$HOSTNAME/g"
 
 # stop the container
 stop:
@@ -24,6 +30,9 @@ stop:
 
 login:
 	docker-compose -p $(project_name) exec $(service_name) /bin/bash
+
+log logs:
+	docker-compose -p $(project_name) logs -f $(service_name)
 
 build:
 	docker build -t $(container_name) -f Dockerfile .
@@ -38,4 +47,3 @@ clean:
 	docker-compose -p $(project_name) down --remove-orphans -rmi all 2>/dev/null \
 	&& docker-compose -p $(project_name) rm -f \
 	&& echo 'Project [$(project_name)] removed.'
-

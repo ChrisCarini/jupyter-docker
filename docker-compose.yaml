@@ -6,7 +6,18 @@ volumes:
 services:
   jupyterlab:
     image: chriscarini/jupyterlab
+    environment:
+      - NB_USER=${NB_USER}
+      - NB_UID=${NB_UID}
+      - NB_GID=${NB_GID}
+      - CHOWN_HOME=yes
+      - GRANT_SUDO=yes
+      - UID=${UID}
+      - GID=${GID}
+    user: root
     ports:
       - "8888:8888"
     volumes:
-      - ./workbooks:/home/jovyan/workbooks
+      - ./workbooks:/home/${NB_USER}/workbooks
+      - ./jupyter-hooks/before-notebook.d:/usr/local/bin/before-notebook.d
+      - ./jupyter-hooks/start-notebook.d:/usr/local/bin/start-notebook.d
