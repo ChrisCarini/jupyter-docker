@@ -1,4 +1,10 @@
-FROM jupyter/datascience-notebook
+# If I ever dive into R / Julia, I'll probably want to use the `datascience-notebook`;
+# until then, I will just stick with the scipy to keep this image smaller.
+#
+# Docs: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html
+#FROM jupyter/datascience-notebook
+
+FROM jupyter/scipy-notebook
 
 # Opt to use Jupyter Lab instead of Notebook
 # Ref: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/common.html?highlight=JUPYTER_ENABLE_LAB#docker-options
