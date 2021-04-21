@@ -18,15 +18,6 @@ Below are the customizations / packages I added.
 
 ## ML / AI
 
-### `requests`
-
-* [PyPi](https://pypi.org/project/requests/)
-* [GitHub](https://github.com/psf/requests)
-* [Documentation](https://docs.python-requests.org/en/master/)
-
-**What/Why:** I occasionally need to `GET` some data or `POST` some data. I prefer doing that through `requests`.
-**How did I discover this lib?:** `requests` is a super common library for making web requests.
-
 ### `matrixprofile`
 
 * [PyPi](https://pypi.org/project/matrixprofile/)
@@ -170,6 +161,17 @@ Outputs HTML reports.
 **What/Why:** In-depth EDA (target analysis, comparison, feature analysis, correlation) in two lines of code! Outputs
 HTML reports.
 **How did I discover this lib?:** Discovered as part of my research of EDA libraries.
+
+## General / Misc / Other
+
+### `requests`
+
+* [PyPi](https://pypi.org/project/requests/)
+* [GitHub](https://github.com/psf/requests)
+* [Documentation](https://docs.python-requests.org/en/master/)
+
+**What/Why:** I occasionally need to `GET` some data or `POST` some data. I prefer doing that through `requests`.
+**How did I discover this lib?:** `requests` is a super common library for making web requests.
 
 # Notes
 
