@@ -22,7 +22,7 @@ RUN pip install --upgrade jupyterlab \
 COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 
 # Install Python Packages & Requirements (Done near end to avoid invalidating cache)
-RUN pip install --user -r /tmp/requirements.txt && \
+RUN pip install -r /tmp/requirements.txt && \
 
     ##
     # Extensions
