@@ -49,13 +49,6 @@ RUN pip install -r /tmp/requirements.txt && \
 #    # GitHub - https://github.com/jupyterlab/jupyterlab-github
 #    jupyter labextension install @jupyterlab/github && \
 
-#    # NOTE: THE BELOW CAN NOT BE ENABLED BECAUSE IT FAILS WITH THE BELOW ERROR:
-#    #      ValueError: The extension "@pyviz/jupyterlab_pyviz" does not yet
-#    #      support the current version of JupyterLab.
-#    # HoloViz Extension
-#    # Ref: https://holoviz.org/installation.html#step-4-option-b-launch-jupyterlab
-#    jupyter labextension install @pyviz/jupyterlab_pyviz && \
-
     # Cleanup (index caches/lock files/etc..)
     conda clean --all -f -y && \
 
