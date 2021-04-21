@@ -24,11 +24,6 @@ RUN pip install --user -r /tmp/requirements.txt && \
     # Extension TOC
     jupyter labextension install @jupyterlab/toc && \
 
-#    # Install Lux API extensions -> https://github.com/lux-org/lux#setup-in-jupyter-lab
-#    # NOTE: Not supported in JupyterLab 3 (yet); GH Issue -> https://github.com/lux-org/lux-widget/issues/64
-#    jupyter labextension install @jupyter-widgets/jupyterlab-manager && \
-#    jupyter labextension install luxwidget && \
-
 #    # NOTE: THE BELOW CAN NOT BE ENABLED BECAUSE IT FAILS WITH THE BELOW ERROR:
 #    #      ValueError: The extension "@pyviz/jupyterlab_pyviz" does not yet
 #    #      support the current version of JupyterLab.
