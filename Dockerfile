@@ -24,8 +24,24 @@ COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 # Install Python Packages & Requirements (Done near end to avoid invalidating cache)
 RUN pip install --user -r /tmp/requirements.txt && \
 
-    # Extension TOC
+    ##
+    # Extensions
+    ##
+
+    # Table of Contents - https://github.com/jupyterlab/jupyterlab-toc
     jupyter labextension install @jupyterlab/toc && \
+
+#    # TODO - Disabled due to lack of JupyterLab 3.0 support - https://github.com/jupyterlab/jupyterlab-data-explorer/issues/143
+#    # Data Explorer - https://github.com/jupyterlab/jupyterlab-data-explorer
+#    jupyter labextension install @jupyterlab/dataregistry-extension && \
+
+#    # TODO - Disabled due to lack of JupyterLab 3.0 support - https://github.com/jupyterlab/jupyterlab-shortcutui/issues/63
+#    # Shortcut UI - https://github.com/jupyterlab/jupyterlab-shortcutui
+#    jupyter labextension install @jupyterlab/shortcutui && \
+
+#    # TODO - Disabled due to lack of JupyterLab 3.0 support - https://github.com/jupyterlab/jupyterlab-github/issues/111
+#    # GitHub - https://github.com/jupyterlab/jupyterlab-github
+#    jupyter labextension install @jupyterlab/github && \
 
 #    # NOTE: THE BELOW CAN NOT BE ENABLED BECAUSE IT FAILS WITH THE BELOW ERROR:
 #    #      ValueError: The extension "@pyviz/jupyterlab_pyviz" does not yet
