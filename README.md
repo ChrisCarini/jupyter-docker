@@ -16,6 +16,14 @@ The above command will:
 
 Below are the customizations / packages I added.
 
+## Jupyter Extensions
+
+### `jupyterlab-git`
+
+* [PyPi](https://pypi.org/project/jupyterlab-git/)
+* [GitHub](https://github.com/jupyterlab/jupyterlab-git)
+* [Documentation](https://github.com/jupyterlab/jupyterlab-git/blob/master/README.md)
+
 ## ML / AI
 
 ### `matrixprofile`

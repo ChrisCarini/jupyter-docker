@@ -5,7 +5,10 @@ FROM jupyter/datascience-notebook
 ENV JUPYTER_ENABLE_LAB=yes
 
 # Upgrade lab version + rebuild
-RUN pip install --upgrade jupyterlab && \
+RUN pip install --upgrade jupyterlab \
+        # Git Support (Adds sidebar for Git) - https://github.com/jupyterlab/jupyterlab-git
+        jupyterlab-git \
+    && \
     jupyter lab build && \
 
     # Cleanup (index caches/lock files/etc..)
