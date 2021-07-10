@@ -50,6 +50,8 @@ Below are the customizations / packages I added.
 
 **How did I discover this lib?:** Suggested from colleague at work (Shailesh).
 
+**Example:** ❌ - Not yet `:(`
+
 ### `XGBoost`
 
 * [PyPi](https://pypi.org/project/xgboost/)
@@ -60,6 +62,8 @@ Below are the customizations / packages I added.
 be highly _**efficient**_, _**flexible**_ and _**portable**_.
 
 **How did I discover this lib?:** Suggested from colleague at work (Shailesh).
+
+**Example:** ❌ - Not yet `:(`
 
 **NOTE:** XGBoost in JupyterLab has some special
 sauce: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/recipes.html#xgboost
@@ -77,6 +81,8 @@ InterpretML helps you understand your model's global behavior, or understand the
 
 **How did I discover this lib?:** Suggested from colleague at work (Shailesh).
 
+**Example:** ❌ - Not yet `:(`
+
 ### `kiwisolver`
 
 * [PyPi](https://pypi.org/project/kiwisolver/)
@@ -89,6 +95,8 @@ InterpretML helps you understand your model's global behavior, or understand the
 believe I was investigating ways to 'trial & error' plugging in different 'weights' for correlation analysis work for
 reliability calculations to identify the weight of subsystems.
 
+**Example:** ❌ - Not yet `:(`
+
 ### `PyCaret`
 
 * [PyPi](https://pypi.org/project/pycaret/)
@@ -100,6 +108,8 @@ preparing your data to deploying your model within minutes in your choice of not
 
 **How did I discover this lib?:** No idea. Maybe a suggestion from a colleague at work (Shailesh)?
 
+**Example:** ❌ - Not yet `:(`
+
 ### `pyfpgrowth`
 
 * [PyPi](https://pypi.org/project/pyfpgrowth/)
@@ -109,6 +119,8 @@ preparing your data to deploying your model within minutes in your choice of not
 **What/Why:** A Python implementation of the Frequent Pattern Growth algorithm.
 
 **How did I discover this lib?:** Discovered this library when reading up on FPGrowth.
+
+**Example:** ❌ - Not yet `:(`
 
 ## Data Visualization
 
@@ -123,6 +135,8 @@ and flexibly.
 
 **How did I discover this lib?:** Suggested from colleague at work (Grant). Also posted by Christopher Walker in work
 Slack channel #oneliners back in mid-2020.
+
+**Example:** ❌ - Not yet `:(`
 
 ### `Panel`
 
@@ -159,6 +173,8 @@ looking for.
 
 **How did I discover this lib?:** Found when researching heatmaps for correlation diagram.
 
+**Example:** ❌ - Not yet `:(`
+
 ### `holoviews`
 
 * [PyPi](https://pypi.org/project/holoviews/)
@@ -172,6 +188,8 @@ what you want to do in very few lines of code, letting you focus on what you are
 the process of plotting.
 
 **How did I discover this lib?:** No idea.
+
+**Example:** ❌ - Not yet `:(`
 
 ## EDA (Exploratory Data Analysis)
 
@@ -212,6 +230,8 @@ HTML reports.
 **What/Why:** I occasionally need to `GET` some data or `POST` some data. I prefer doing that through `requests`.
 
 **How did I discover this lib?:** `requests` is a super common library for making web requests.
+
+**Example:** ❌ - Not yet `:(`
 
 # Notes
 
