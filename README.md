@@ -201,3 +201,7 @@ _**On OSX**_, you will need to increase docker:
     1) Stop the Docker container
     2) Remove container, network, volumes and images
     3) Remove the stopped container
+
+# NOTES
+
+Look into https://github.com/marketplace/actions/build-and-push-docker-images
