@@ -114,6 +114,19 @@ and flexibly.
 **How did I discover this lib?:** Suggested from colleague at work (Grant). Also posted by Christopher Walker in work
 Slack channel #oneliners back in mid-2020.
 
+### `Panel`
+
+* [PyPi](https://pypi.org/project/panel/)
+* [GitHub](https://github.com/holoviz/panel/)
+* [Documentation - Website](https://panel.holoviz.org/)
+
+**What/Why:** Panel is an open-source Python library that lets you create custom interactive web apps and dashboards by
+connecting user-defined widgets to plots, images, tables, or text.
+
+**How did I discover this lib?:** It was likely pulled in from `Datashader` or `Holoviews`.
+
+**Example:** ✅ - [holoviz - panel.ipynb](./workbooks/examples/Data%20Visualization/holoviz%20-%20panel.ipynb)
+
 ### `Lux`
 
 * [PyPi](https://pypi.org/project/lux-api/)
