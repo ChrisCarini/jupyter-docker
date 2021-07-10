@@ -185,6 +185,8 @@ Outputs HTML reports.
 HTML reports.
 **How did I discover this lib?:** Discovered as part of my research of EDA libraries.
 
+**Example:** ✅ - [sweetviz.ipynb](./workbooks/examples/EDA/sweetviz.ipynb)
+
 ## General / Misc / Other
 
 ### `requests`
