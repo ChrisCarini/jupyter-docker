@@ -37,6 +37,8 @@ Below are the customizations / packages I added.
 **What/Why:** Neat library for mining time-series data.
 **How did I discover this lib?:** I saw a talk/presentation about this at work.
 
+**Example:** ✅ - [matrixprofile.ipynb](./workbooks/examples/ML%20and%20AI/matrixprofile.ipynb)
+
 ### `DoWhy`
 
 * [PyPi](https://pypi.org/project/dowhy/)
