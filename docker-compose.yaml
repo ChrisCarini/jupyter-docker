@@ -1,7 +1,7 @@
 version: '3'
 
 volumes:
-  lab-volumne:
+  lab-volume:
 
 services:
   jupyterlab:
