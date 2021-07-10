@@ -173,6 +173,8 @@ the process of plotting.
 Outputs HTML reports.
 **How did I discover this lib?:** Discovered as part of my research of EDA libraries.
 
+**Example:** ✅ - [pandas-profiling.ipynb](./workbooks/examples/EDA/pandas-profiling.ipynb)
+
 ### `sweetviz`
 
 * [PyPi](https://pypi.org/project/sweetviz/)
