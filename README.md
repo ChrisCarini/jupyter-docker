@@ -35,6 +35,7 @@ Below are the customizations / packages I added.
     * [Examples](https://matrixprofile.docs.matrixprofile.org/examples.html)
 
 **What/Why:** Neat library for mining time-series data.
+
 **How did I discover this lib?:** I saw a talk/presentation about this at work.
 
 **Example:** ✅ - [matrixprofile.ipynb](./workbooks/examples/ML%20and%20AI/matrixprofile.ipynb)
@@ -46,6 +47,7 @@ Below are the customizations / packages I added.
 * [Documentation](https://microsoft.github.io/dowhy/)
 
 **What/Why:** An end-to-end library for causal inference.
+
 **How did I discover this lib?:** Suggested from colleague at work (Shailesh).
 
 ### `XGBoost`
@@ -56,6 +58,7 @@ Below are the customizations / packages I added.
 
 **What/Why:** e[X]treme [G]radient Boosting. XGBoost is an optimized distributed gradient boosting library designed to
 be highly _**efficient**_, _**flexible**_ and _**portable**_.
+
 **How did I discover this lib?:** Suggested from colleague at work (Shailesh).
 
 **NOTE:** XGBoost in JupyterLab has some special
@@ -71,6 +74,7 @@ sauce: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/recipes.html
 **What/Why:** InterpretML is an open-source package that incorporates state-of-the-art machine learning interpretability
 techniques under one roof. With this package, you can train interpretable glassbox models and explain blackbox systems.
 InterpretML helps you understand your model's global behavior, or understand the reasons behind individual predictions.
+
 **How did I discover this lib?:** Suggested from colleague at work (Shailesh).
 
 ### `kiwisolver`
@@ -80,6 +84,7 @@ InterpretML helps you understand your model's global behavior, or understand the
 * [Documentation](https://kiwisolver.readthedocs.io/en/latest/)
 
 **What/Why:** Kiwi is an efficient C++ implementation of the Cassowary constraint solving algorithm.
+
 **How did I discover this lib?:** I discovered this as part of my readings / research for correlation analysis. I
 believe I was investigating ways to 'trial & error' plugging in different 'weights' for correlation analysis work for
 reliability calculations to identify the weight of subsystems.
@@ -92,6 +97,7 @@ reliability calculations to identify the weight of subsystems.
 
 **What/Why:** PyCaret is an open source, _**low-code**_ machine learning library in Python that allows you to go from
 preparing your data to deploying your model within minutes in your choice of notebook environment.
+
 **How did I discover this lib?:** No idea. Maybe a suggestion from a colleague at work (Shailesh)?
 
 ### `pyfpgrowth`
@@ -101,6 +107,7 @@ preparing your data to deploying your model within minutes in your choice of not
 * [Documentation](https://fp-growth.readthedocs.org/)
 
 **What/Why:** A Python implementation of the Frequent Pattern Growth algorithm.
+
 **How did I discover this lib?:** Discovered this library when reading up on FPGrowth.
 
 ## Data Visualization
@@ -113,6 +120,7 @@ preparing your data to deploying your model within minutes in your choice of not
 
 **What/Why:** Datashader is a graphics pipeline system for creating meaningful representations of large datasets quickly
 and flexibly.
+
 **How did I discover this lib?:** Suggested from colleague at work (Grant). Also posted by Christopher Walker in work
 Slack channel #oneliners back in mid-2020.
 
@@ -138,6 +146,7 @@ connecting user-defined widgets to plots, images, tables, or text.
 **What/Why:** Lux is a Python library that makes data science easier by automating aspects of the data exploration
 process. Lux facilitate faster experimentation with data, even when the user does not have a clear idea of what they are
 looking for.
+
 **How did I discover this lib?:** Suggested from colleague at work (Jim).
 
 ### `seaborn`
@@ -147,6 +156,7 @@ looking for.
 * [Documentation](https://seaborn.pydata.org/)
 
 **What/Why:** Seaborn is a library for making statistical graphics in Python.
+
 **How did I discover this lib?:** Found when researching heatmaps for correlation diagram.
 
 ### `holoviews`
@@ -173,6 +183,7 @@ the process of plotting.
 
 **What/Why:** `pandas_profiling` extends the pandas DataFrame with `df.profile_report()` for quick data analysis.
 Outputs HTML reports.
+
 **How did I discover this lib?:** Discovered as part of my research of EDA libraries.
 
 **Example:** ✅ - [pandas-profiling.ipynb](./workbooks/examples/EDA/pandas-profiling.ipynb)
@@ -185,6 +196,7 @@ Outputs HTML reports.
 
 **What/Why:** In-depth EDA (target analysis, comparison, feature analysis, correlation) in two lines of code! Outputs
 HTML reports.
+
 **How did I discover this lib?:** Discovered as part of my research of EDA libraries.
 
 **Example:** ✅ - [sweetviz.ipynb](./workbooks/examples/EDA/sweetviz.ipynb)
@@ -198,6 +210,7 @@ HTML reports.
 * [Documentation](https://docs.python-requests.org/en/master/)
 
 **What/Why:** I occasionally need to `GET` some data or `POST` some data. I prefer doing that through `requests`.
+
 **How did I discover this lib?:** `requests` is a super common library for making web requests.
 
 # Notes
