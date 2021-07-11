@@ -149,6 +149,8 @@ looking for.
 
 **How did I discover this lib?:** Suggested from colleague at work (Jim).
 
+**Example:** ✅ - [lux.ipynb](./workbooks/examples/Data%20Visualization/lux.ipynb)
+
 ### `seaborn`
 
 * [PyPi](https://pypi.org/project/seaborn/)
