@@ -2,7 +2,31 @@ datashader==0.12.1
 dowhy==0.6
 holoviews==1.14.2
 interpret==0.2.4
-lux-api==0.3.0
+lux-api==0.3.1
+
+# lux-widget 0.1.6 does not work with JupyterLab right now; forcing this to 0.1.5 makes it work fine.
+# MY NOTES BELOW
+# ==============
+# GitHub Bug: https://github.com/lux-org/lux-widget/issues/94
+#
+# FILES TO CHANGE
+# ---------------
+# find / -name package.json | grep lux | xargs grep "0.1.5"
+#   /opt/conda/share/jupyter/labextensions/luxwidget/package.json
+#   /opt/conda/share/jupyter/nbextensions/luxwidget/package.json
+#   /opt/conda/lib/python3.8/site-packages/luxwidget/nbextension/package.json
+#   /opt/conda/lib/python3.8/site-packages/luxwidget/labextension/package.json
+#
+# vi /opt/conda/lib/python3.8/site-packages/luxwidget/nbextension/package.json
+# vi /opt/conda/share/jupyter/nbextensions/luxwidget/package.json
+# jupyter lab clean; jupyter lab build --no-minimize
+
+# WORKS FINE, BUT IS OLDER VERSION
+#lux-widget==0.1.5
+
+# WORKS FINE; IS THE COMMIT AFTER 0.1.6 THAT CORRECTLY INCLUDES THE CORRECT VERSION.
+git+https://github.com/lux-org/lux-widget.git@b4a479c015a360b0f52bc754a5dc5841e7195209
+
 matrixprofile==1.1.10
 pandas-profiling==2.11.0
 pycaret==2.3.0
