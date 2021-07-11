@@ -83,20 +83,6 @@ InterpretML helps you understand your model's global behavior, or understand the
 
 **Example:** ❌ - Not yet `:(`
 
-### `kiwisolver`
-
-* [PyPi](https://pypi.org/project/kiwisolver/)
-* [GitHub](https://github.com/nucleic/kiwi)
-* [Documentation](https://kiwisolver.readthedocs.io/en/latest/)
-
-**What/Why:** Kiwi is an efficient C++ implementation of the Cassowary constraint solving algorithm.
-
-**How did I discover this lib?:** I discovered this as part of my readings / research for correlation analysis. I
-believe I was investigating ways to 'trial & error' plugging in different 'weights' for correlation analysis work for
-reliability calculations to identify the weight of subsystems.
-
-**Example:** ❌ - Not yet `:(`
-
 ### `PyCaret`
 
 * [PyPi](https://pypi.org/project/pycaret/)
@@ -253,6 +239,32 @@ _**On OSX**_, you will need to increase docker:
     1) Stop the Docker container
     2) Remove container, network, volumes and images
     3) Remove the stopped container
+
+# Removed Customizations / Libraries
+
+This section is for libraries / customizations I once had, but have since removed. I may use them in the future, hence,
+I am keeping them here for posterity.
+
+### `kiwisolver`
+
+_**Why did I remove this library?:** Very simply, it did not work/do what I wanted it to do. When crafting an example
+for the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem) (`a^2 + b^2 = c^2`), I was not able to
+do `Variable` multiplication - this functionality just does not exist, as is demonstrated in the `test_variable_mul()`
+test of the [`test_variable.py`](https://github.com/nucleic/kiwi/blob/main/py/tests/test_variable.py) file in the
+project._
+
+* [PyPi](https://pypi.org/project/kiwisolver/)
+* [GitHub](https://github.com/nucleic/kiwi)
+* [Documentation](https://kiwisolver.readthedocs.io/en/latest/)
+
+**What/Why:** Kiwi is an efficient C++ implementation of the Cassowary constraint solving algorithm.
+
+**How did I discover this lib?:** I discovered this as part of my readings / research for correlation analysis. I
+believe I was investigating ways to 'trial & error' plugging in different 'weights' for correlation analysis work for
+reliability calculations to identify the weight of subsystems.
+
+**Example:** ❓✅❓ - [kiwisolver.ipynb](./workbooks/examples/ML%20and%20AI/kiwisolver.ipynb) (**Note:** This example does
+not work, because of the reason I removed this library.)
 
 # NOTES
 
