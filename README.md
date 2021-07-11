@@ -159,7 +159,7 @@ looking for.
 
 **How did I discover this lib?:** Found when researching heatmaps for correlation diagram.
 
-**Example:** ❌ - Not yet `:(`
+**Example:** ✅ - [seaborn.ipynb](./workbooks/examples/Data%20Visualization/seaborn.ipynb)
 
 ### `holoviews`
 
