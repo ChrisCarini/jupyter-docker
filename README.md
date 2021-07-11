@@ -231,7 +231,7 @@ HTML reports.
 
 **How did I discover this lib?:** `requests` is a super common library for making web requests.
 
-**Example:** ❌ - Not yet `:(`
+**Example:** ✅ - [requests.ipynb](./workbooks/examples/General%20&%20Misc%20&%20Other/requests.ipynb)
 
 # Notes
 
