@@ -219,13 +219,6 @@ HTML reports.
 
 **Example:** ✅ - [requests.ipynb](./workbooks/examples/General%20&%20Misc%20&%20Other/requests.ipynb)
 
-# Notes
-
-_**On OSX**_, you will need to increase docker:
-
-- memory to 4GB+
-- storage to 24GB+
-
 # (`make`) Commands
 
 - `make run` — Run the container (will build the Docker image if not built already)
@@ -266,6 +259,11 @@ reliability calculations to identify the weight of subsystems.
 **Example:** ❓✅❓ - [kiwisolver.ipynb](./workbooks/examples/ML%20and%20AI/kiwisolver.ipynb) (**Note:** This example does
 not work, because of the reason I removed this library.)
 
-# NOTES
+# Notes
+
+_**On OSX**_, you will need to increase docker:
+
+- memory to 4GB+
+- storage to 24GB+
 
 Look into https://github.com/marketplace/actions/build-and-push-docker-images
