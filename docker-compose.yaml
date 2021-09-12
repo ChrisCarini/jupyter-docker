@@ -21,3 +21,4 @@ services:
       - ./workbooks:/home/${NB_USER}/workbooks
       - ./jupyter-hooks/before-notebook.d:/usr/local/bin/before-notebook.d
       - ./jupyter-hooks/start-notebook.d:/usr/local/bin/start-notebook.d
+      - ./application-settings-overrides.json:/opt/conda/share/jupyter/lab/settings/overrides.json
