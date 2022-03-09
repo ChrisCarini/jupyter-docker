@@ -67,9 +67,8 @@ RUN pip install -r /tmp/requirements.txt && \
 #    # Shortcut UI - https://github.com/jupyterlab/jupyterlab-shortcutui
 #    jupyter labextension install @jupyterlab/shortcutui && \
 
-#    # TODO - Disabled due to lack of JupyterLab 3.0 support - https://github.com/jupyterlab/jupyterlab-github/issues/111
-#    # GitHub - https://github.com/jupyterlab/jupyterlab-github
-#    jupyter labextension install @jupyterlab/github && \
+    # GitHub - https://github.com/jupyterlab/jupyterlab-github
+    jupyter labextension install --no-minimize @jupyterlab/github && \
 
     # Cleanup (index caches/lock files/etc..)
     conda clean --all -f -y && \
