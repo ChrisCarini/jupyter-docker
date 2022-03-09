@@ -35,8 +35,7 @@ ENV JUPYTER_ENABLE_LAB=yes
 # Upgrade lab version + rebuild
 RUN pip install --upgrade jupyterlab \
         # Git Support (Adds sidebar for Git) - https://github.com/jupyterlab/jupyterlab-git
-        jupyterlab-git \
-    && \
+        jupyterlab-git && \
     jupyter lab build --no-minimize && \
 
     # Cleanup (index caches/lock files/etc..)
@@ -51,7 +50,6 @@ COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 
 # Install Python Packages & Requirements (Done near end to avoid invalidating cache)
 RUN pip install -r /tmp/requirements.txt && \
-
     ##
     # Extensions
     ##
