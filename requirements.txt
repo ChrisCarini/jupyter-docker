@@ -3,8 +3,9 @@ dowhy==0.6
 holoviews==1.14.2
 interpret==0.2.4
 jupyterlab_execute_time==2.0.5
-lux-api==0.3.1
-lux-widget==0.1.7
+jupyterlab-git==0.34.2
+lux-api==0.5.1
+lux-widget==0.1.11
 matrixprofile==1.1.10
 pandas-profiling==2.11.0
 pycaret==2.3.0

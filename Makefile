@@ -19,10 +19,11 @@ run lab: build
 	@echo 'Waiting for container to start...' \
 	&& ( docker-compose -p $(project_name) logs -f $(service_name) & ) | grep -q '127.0.0.1.*token'
 	@# Then print the access information.
+	@sleep 1  # Add a brief sleep to allow the access command time to show the server list.
 	@make access
 
 access:
-	@docker-compose -p $(project_name) exec $(service_name) bash -c "sudo -u $$USER /opt/conda/bin/jupyter server list" | sed "s/0.0.0.0/$$HOSTNAME/g"
+	@docker-compose -p $(project_name) exec -T $(service_name) bash -c "sudo -u $$USER /opt/conda/bin/jupyter server list" | sed -E "s/(\/)[a-zA-Z0-9_]+(\:8888)/\1localhost\2/g"
 
 # stop the container
 stop:
