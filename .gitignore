@@ -1,6 +1,7 @@
 .idea/
 .ipynb_checkpoints/
 .venv/
+venv/
 .env
 # Makefile file-markers for build & rebuild
 build
