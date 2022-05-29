@@ -18,23 +18,22 @@ USER $NB_USER
 COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 
 # Install Python Packages & Requirements (Done near end to avoid invalidating cache)
-RUN pip install -r /tmp/requirements.txt && \
-    ##
-    # Extensions
-    ##
+RUN pip install -r /tmp/requirements.txt
 
+# Install extensions
+RUN \
     # Lux Widget - https://github.com/lux-org/lux#setup-in-jupyter-lab
     jupyter labextension install --no-minimize @jupyter-widgets/jupyterlab-manager && \
     jupyter labextension install --no-minimize luxwidget && \
-
+    \
     # GitHub - https://github.com/jupyterlab/jupyterlab-github
-    jupyter labextension install --no-minimize @jupyterlab/github && \
+    jupyter labextension install --no-minimize @jupyterlab/github
 
-    # Cleanup (index caches/lock files/etc..)
-    conda clean --all -f -y && \
+# Cleanup (index caches/lock files/etc..)
+RUN conda clean --all -f -y
 
-    # Correct permissions
-    fix-permissions $CONDA_DIR && \
+# Correct permissions
+RUN fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 
 # Set the user to be $NB_USER so the notebook directory is correct.
