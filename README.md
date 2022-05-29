@@ -281,3 +281,16 @@ _**On OSX**_, you will need to increase docker:
 - storage to 24GB+
 
 Look into https://github.com/marketplace/actions/build-and-push-docker-images
+
+# Publish the Docker image to Docker Hub
+```shell
+docker login --username chriscarini
+
+VERSION=0.0.1
+IMAGE="chriscarini/jupyterlab"
+
+# Give the image two tags; one version, and one `latest`.
+docker build -t "$IMAGE:latest" -t "$IMAGE:$VERSION" .
+
+sudo docker push "$IMAGE:latest" && docker push "$IMAGE:$VERSION"
+```
