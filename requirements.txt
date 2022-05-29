@@ -8,6 +8,7 @@ lux-api==0.5.1
 lux-widget==0.1.11
 matrixprofile==1.1.10
 pandas-profiling==2.11.0
+pm4py==2.2.19.1
 pycaret==2.3.0
 pyfpgrowth==1.0
 pyviz_comms==2.0.1

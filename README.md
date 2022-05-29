@@ -209,6 +209,18 @@ HTML reports.
 
 ## General / Misc / Other
 
+### `pm4py`
+
+* [PyPi](https://pypi.org/project/pm4py/)
+* [GitHub](https://github.com/pm4py/pm4py-core)
+* [Documentation](https://pm4py.fit.fraunhofer.de/docs)
+
+**What/Why:** pm4py is a python library that supports (state-of-the-art) process mining algorithms in python.
+
+**How did I discover this lib?:** Suggested from colleague at work (Shailesh).
+
+**Example:** ✅ - [Promotion_Frequency.ipynb](./workbooks/examples/Process%20Mining/Promotion_Frequency.ipynb)
+
 ### `requests`
 
 * [PyPi](https://pypi.org/project/requests/)
