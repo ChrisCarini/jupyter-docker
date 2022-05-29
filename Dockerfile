@@ -27,9 +27,6 @@ RUN pip install -r /tmp/requirements.txt && \
     jupyter labextension install --no-minimize @jupyter-widgets/jupyterlab-manager && \
     jupyter labextension install --no-minimize luxwidget && \
 
-    # Table of Contents - https://github.com/jupyterlab/jupyterlab-toc
-    jupyter labextension install --no-minimize @jupyterlab/toc && \
-
     # GitHub - https://github.com/jupyterlab/jupyterlab-github
     jupyter labextension install --no-minimize @jupyterlab/github && \
 
