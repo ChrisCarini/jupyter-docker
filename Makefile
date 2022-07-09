@@ -22,7 +22,7 @@ run lab: build
 	@sleep 1  # Add a brief sleep to allow the access command time to show the server list.
 	@make access
 
-access:
+access info:
 	@docker-compose -p $(project_name) exec -T $(service_name) bash -c "sudo -u $$USER /opt/conda/bin/jupyter server list" | sed -E "s/(\/)[a-zA-Z0-9_]+(\:8888)/\1localhost\2/g"
 
 # stop the container
