@@ -3,7 +3,7 @@ dowhy==0.6
 holoviews==1.14.2
 interpret==0.2.4
 jupyterlab_execute_time==2.0.5
-jupyterlab-git==0.34.2
+jupyterlab-git==0.51.1
 lux-api==0.5.1
 lux-widget==0.1.11
 matrixprofile==1.1.10
